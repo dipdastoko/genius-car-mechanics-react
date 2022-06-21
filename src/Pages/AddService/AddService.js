@@ -6,7 +6,7 @@ import './AddService.css';
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://immense-sierra-19949.herokuapp.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');
